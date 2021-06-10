@@ -3,3 +3,4 @@
 __pycache__
 .vscode
 python3-virtualenv/
+test/
