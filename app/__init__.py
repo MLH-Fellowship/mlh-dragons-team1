@@ -14,3 +14,18 @@ def index():
 # so we don't have to always go through environment variables
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+@app.route('/blogs')
+def project_page():
+    return render_template('blog.html')
+
+
+@app.route('/projects')
+def project_page():
+    return render_template('project.html')
+
+
+@app.route('/team')
+def project_page():
+    return render_template('team.html')
