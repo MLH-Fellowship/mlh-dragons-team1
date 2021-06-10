@@ -9,18 +9,3 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
-
-
-@app.route('/blogs')
-def project_page():
-    return render_template('blog.html')
-
-
-@app.route('/projects')
-def project_page():
-    return render_template('project.html')
-
-
-@app.route('/team')
-def project_page():
-    return render_template('team.html')
