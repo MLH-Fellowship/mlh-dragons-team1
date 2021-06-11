@@ -46,15 +46,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card .front {
+.card .front1 {
   background-image: url('../img/vii.jpg');
   background-size: cover;
   color: white;
 }
-/* .img {
-  background-size: cover;
-} */
 
+.card .front2 {
+  background-image: url('../img/lois.JPEG');
+  background-size: cover;
+  color: white;
+}
+
+.card .front3 {
+  background-image: url('../img/david.jpeg');
+  background-size: cover;
+  color: white;
+}
 .card .back {
   background: orange;
   color: white;
