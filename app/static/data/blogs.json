@@ -1,0 +1,19 @@
+{
+	"blogs": [
+		{
+			"blogID": 1, 
+			"title": "Example Blog Title", 
+			"content" : "test content"
+		},
+		{
+			"blogID": 2, 
+			"title": "Another Example Blog Title", 
+			"content" : "test content"
+		},
+		{
+			"blogID": 3, 
+			"title": "Last Example Blog Title", 
+			"content": "test content"
+		}
+	]
+}
