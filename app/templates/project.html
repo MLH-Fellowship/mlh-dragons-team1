@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+{% extends 'navbar.html' %}
+{% block head %}
+  {{ super() }}
     <link rel="stylesheet" href={{ url_for('static',
     filename='styles/project.css') }} />
-    <title>Projects</title>
-  </head>
-  <body>
+    {% endblock %}
+ 
+    {% block content %}
     <div class="container">
       <h1>Projects</h1>
       <div class="cards">
@@ -67,24 +60,8 @@
           <h2 class="footer-link">Click for more!</h2>
         </a>
         </div>
-        <div class="card">
-          <h2 class="card-title">Project 4</h2>
-          <img
-            src="https://i.pinimg.com/originals/55/2c/31/552c31eecaed00eaf9f5cfa69ab3b5c0.gif"
-            alt=""
-          />
-          <p class="card-desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          </p>
-          <a href="https://github.com/aviiiij" target="_blank">
-            <h2 class="footer-link">Click for more!</h2>
-          </a>
-        </div>
+        
       </div>
     </div>
-  </body>
-</html>
+
+    {% endblock %}
