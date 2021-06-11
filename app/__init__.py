@@ -7,8 +7,9 @@ app = Flask(__name__)
 
 
 @app.route('/')
+@app.route("/home")
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('index.html', title="MLH DRAGON BLOG", url=os.getenv("URL"))
 
 
 # so we don't have to always go through environment variables
@@ -28,4 +29,4 @@ def project_page():
 
 @app.route('/team')
 def team_page():
-    return render_template('team.html')
+    return render_template('team.html', title="Team Dragon's Den")\
