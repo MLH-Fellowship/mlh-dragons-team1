@@ -1,0 +1,91 @@
+body {
+  background-color: #1d539f;
+  background-size: cover;
+  width: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  margin: 0px;
+}
+.teamContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  perspective: 1000px;
+  background-color: transparent;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  background-size: 350px;
+  position: relative;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  border-radius: 50%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.card .front {
+  background-image: url(../img/dummy.jpeg);
+  background-size: cover;
+  color: white;
+}
+
+.card .back {
+  background: orange;
+  color: white;
+  transform: rotateY(-180deg);
+  text-align: center;
+}
+
+.teamProfile {
+  margin-top: 15%;
+}
+
+.teamBio {
+  font-size: larger !important;
+  margin-top: 5%;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}

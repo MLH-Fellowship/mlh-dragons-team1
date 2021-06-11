@@ -7,13 +7,18 @@ app = Flask(__name__)
 
 
 @app.route('/')
+def home():
+    return render_template('index.html', title="MLH DRAGON BLOG", url=os.getenv("URL"))
+
+
+@app.route("/home")
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('index.html', title="MLH DRAGON BLOG", url=os.getenv("URL"))
 
 
 # so we don't have to always go through environment variables
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
 
 
 @app.route('/blogs')
@@ -44,4 +49,4 @@ def project_page():
 
 @app.route('/team')
 def team_page():
-    return render_template('team.html')
+    return render_template('team.html', title="Team Dragon's Den")
