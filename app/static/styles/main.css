@@ -91,7 +91,155 @@ body {
 }
 
 .banner .title {
+<<<<<<< Updated upstream
     color: white;
     font-size: 50px;
     font-weight: 700;
 }
+=======
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.intro {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 70%;
+  margin-top: 25%;
+}
+
+.fire {
+  animation: animation 1s ease-in-out infinite alternate;
+  -moz-animation: animation 1s ease-in-out infinite alternate;
+  -webkit-animation: animation 1s ease-in-out infinite alternate;
+  -o-animation: animation 1s ease-in-out infinite alternate;
+}
+
+.intro h1 {
+  background-image: -moz-linear-gradient(top, #111, #0c0c0c);
+  background-image: -ms-linear-gradient(top, #111, #0c0c0c);
+  background-image: -o-linear-gradient(top, #111, #0c0c0c);
+  font-size: 2em;
+  font-family: "Amethysta", serif;
+  text-align: center;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: typing 3.5s steps(40), blink-caret 0.75s step-end infinite;
+  animation: typing 3.5s steps(40), blink-caret 0.75s step-end infinite;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes typing {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blink-caret {
+  0%,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+@keyframes blink-caret {
+  0%,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+@keyframes animation {
+  0% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
+      -20px -20px 40px #ffae34, 20px -40px 50px #ec760c,
+      -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  }
+  100% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9,
+      -20px -20px 40px #feec85, 22px -42px 60px #ffae34,
+      -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
+  }
+}
+
+@-moz-keyframes animation {
+  0% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
+      -20px -20px 40px #ffae34, 20px -40px 50px #ec760c,
+      -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  }
+  100% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9,
+      -20px -20px 40px #feec85, 22px -42px 60px #ffae34,
+      -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
+      -20px -20px 40px #ffae34, 20px -40px 50px #ec760c,
+      -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  }
+  100% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9,
+      -20px -20px 40px #feec85, 22px -42px 60px #ffae34,
+      -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
+  }
+}
+
+@-o-keyframes animation {
+  0% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
+      -20px -20px 40px #ffae34, 20px -40px 50px #ec760c,
+      -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  }
+  100% {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9,
+      -20px -20px 40px #feec85, 22px -42px 60px #ffae34,
+      -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
+  }
+}
+span {
+  color: #000;
+  font-family: "Caesar Dressing", cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 0.2em;
+}
+>>>>>>> Stashed changes
