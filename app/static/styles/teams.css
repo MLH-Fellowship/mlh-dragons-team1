@@ -47,10 +47,13 @@ body {
   align-items: center;
 }
 .card .front {
-  background-image: url(../img/dummy.jpeg);
+  background-image: url('../img/vii.jpg');
   background-size: cover;
   color: white;
 }
+/* .img {
+  background-size: cover;
+} */
 
 .card .back {
   background: orange;

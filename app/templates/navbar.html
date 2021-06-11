@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     {% block head %}
     <meta charset="utf-8" />
     <meta
@@ -22,44 +22,49 @@
       type="text/css"
     />
 
-
     <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
     <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
     <title>{{ title }}</title>
     {% endblock %}
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img src="./static/img/logo.svg" height="40" />
-          </a>
-          <div
-            class="collapse justify-content-end navbar-collapse"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
-                  ><h3>Home</h3></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="blogs"><h3>Blog</h3></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="projects"><h3>Projects</h3></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="team"><h3>Team</h3></a>
-              </li>
-            </ul>
-  
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="./static/img/logo.svg" height="40" />
+        </a>
+        <div
+          class="collapse justify-content-end navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                ><h3>Home</h3></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blogs"><h3>Blog</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="projects"
+                ><h3>Projects</h3></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="team"><h3>Team</h3></a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      {% block content %}{% endblock %}
-</body>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+  </body>
 </html>

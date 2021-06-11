@@ -18,7 +18,7 @@ def index():
 
 # so we don't have to always go through environment variables
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')
 
 
 @app.route('/blogs')
@@ -28,6 +28,7 @@ def blog_page():
     data = json.load(open(json_dir))
     return render_template('blogs.html', blogs=data['blogs'])
 
+
 @app.route('/showblog')
 def showblog():
     id = int(request.args.get('id'))
@@ -35,12 +36,13 @@ def showblog():
     dir = os.path.realpath(os.path.dirname(__file__))
     json_dir = os.path.join(dir, "static/data", "blogs.json")
     data = json.load(open(json_dir))
-    blogs=data
-    
+    blogs = data
+
     blog = blogs["blogs"][id]
     print(blog)
-    return  
+    return
     # return render_template('showblog.html', blog=blog)
+
 
 @app.route('/projects')
 def project_page():

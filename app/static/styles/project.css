@@ -71,6 +71,16 @@
     height: 100%;
   }
   
+  .footer-link {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #6184a8;
+    padding: 2%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
   h1 {
     font-size: 2.8rem;
     color: #fff;

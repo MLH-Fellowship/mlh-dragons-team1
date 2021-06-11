@@ -1,67 +1,61 @@
-{% extends 'navbar.html' %}
-{% block head %}
-  {{ super() }}
-    <link rel="stylesheet" href={{ url_for('static',
-    filename='styles/project.css') }} />
-    {% endblock %}
- 
-    {% block content %}
-    <div class="container">
-      <h1>Projects</h1>
-      <div class="cards">
-        <div class="card">
-          <h2 class="card-title">Project 1</h2>
-          <img
-            src="https://miro.medium.com/max/6000/1*WNv2vYX_vB2RA_O43Phrmw.gif"
-            alt=""
-          />
-          <p class="card-desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          </p>
-          <a href="https://github.com/aviiiij" target="_blank">
-          <h2 class="footer-link">Click for more!</h2>
-          </a>
-        </div>
-        <div class="card">
-          <h2 class="card-title">Project 2</h2>
-          <img
-            src="https://steamusercontent-a.akamaihd.net/ugc/82595628823614964/59CA60267C9EF097829F8B6CFDED0CD489F0ECCE/"
-            alt=""
-          />
-          <p class="card-desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          </p>
-          <a href="https://github.com/aviiiij" target="_blank">
-          <h2 class="footer-link">Click for more!</h2>
-        </a>
-        </div>
-        <div class="card">
-          <h2 class="card-title">Project 3</h2>
-          <img
-            src="https://i.pinimg.com/originals/ca/00/60/ca0060f3414e6e20b75983acddafad53.gif"
-            alt=""
-          />
-          <p class="card-desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          </p>
-          <a href="https://github.com/aviiiij" target="_blank">
-          <h2 class="footer-link">Click for more!</h2>
-        </a>
-        </div>
-        
-      </div>
+{% extends 'navbar.html' %} {% block head %} {{ super() }} <link
+rel="stylesheet" href={{ url_for('static', filename='styles/project.css') }} />
+{% endblock %} {% block content %}
+<div class="container">
+  <h1>Projects</h1>
+  <div class="cards">
+    <div class="card">
+      <h2 class="card-title">Puppeteer</h2>
+      <img
+        src="https://miro.medium.com/max/6000/1*WNv2vYX_vB2RA_O43Phrmw.gif"
+        alt=""
+      />
+      <p class="card-desc">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim. Donec pede justo, fringilla vel,
+      </p>
+      <a href="https://github.com/aviiiij" target="_blank">
+        <h2 class="footer-link">Click for more!</h2>
+      </a>
     </div>
+    <div class="card">
+      <h2 class="card-title">NYAA Cat</h2>
+      <img
+        src="https://steamusercontent-a.akamaihd.net/ugc/82595628823614964/59CA60267C9EF097829F8B6CFDED0CD489F0ECCE/"
+        alt=""
+      />
+      <p class="card-desc">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim. Donec pede justo, fringilla vel,
+      </p>
+      <a href="https://github.com/aviiiij" target="_blank">
+        <h2 class="footer-link">Click for more!</h2>
+      </a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Pythonista</h2>
+      <img
+        src="https://i.pinimg.com/originals/ca/00/60/ca0060f3414e6e20b75983acddafad53.gif"
+        alt=""
+      />
+      <p class="card-desc">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim. Donec pede justo, fringilla vel,
+      </p>
+      <a href="https://github.com/aviiiij" target="_blank">
+        <h2 class="footer-link">Click for more!</h2>
+      </a>
+    </div>
+  </div>
+</div>
 
-    {% endblock %}
+{% endblock %}
