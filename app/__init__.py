@@ -18,7 +18,7 @@ def index():
 
 # so we don't have to always go through environment variables
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
 
 
 @app.route('/blogs')
