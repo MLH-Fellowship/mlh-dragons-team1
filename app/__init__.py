@@ -29,4 +29,4 @@ def project_page():
 
 @app.route('/team')
 def team_page():
-    return render_template('team.html', title="Team Dragon's Den")
+    return render_template('team.html', title="Team Dragon's Den")\
