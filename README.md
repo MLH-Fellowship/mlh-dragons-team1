@@ -1,7 +1,6 @@
-# Flask-Blog
+# Dragons-Den
 
-Minimal Flask template to get started on your blog application for MLH Fellowship Production Engineering track.
- 
+The Portfolio of the cool guys from the Pod 3.3.7
 
 ## Installation
 
@@ -10,16 +9,18 @@ Make sure you have python3 and pip installed
 
 Create and activate virtual environment using virtualenv
 ```bash
-$ python -m venv python3-virtualenv
+$ python3 -m venv python3-virtualenv
 $ source python3-virtualenv/bin/activate
 ```
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
+## Preview
 
+![](app/static/img/Display.png)
 ## Usage
 
 
