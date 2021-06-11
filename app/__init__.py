@@ -7,6 +7,10 @@ app = Flask(__name__)
 
 
 @app.route('/')
+def index():
+    return render_template('index.html', title="MLH DRAGON BLOG", url=os.getenv("URL"))
+
+
 @app.route("/home")
 def index():
     return render_template('index.html', title="MLH DRAGON BLOG", url=os.getenv("URL"))
