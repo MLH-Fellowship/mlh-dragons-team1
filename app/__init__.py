@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
 
 @app.route('/blogs')
-def project_page():
+def blog_page():
     return render_template('blog.html')
 
 
@@ -27,5 +27,5 @@ def project_page():
 
 
 @app.route('/team')
-def project_page():
+def team_page():
     return render_template('team.html')
