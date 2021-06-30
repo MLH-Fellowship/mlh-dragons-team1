@@ -7,3 +7,4 @@ __pycache__
 python3-virtualenv/
 test/
 venv/
+flask.sqlite
